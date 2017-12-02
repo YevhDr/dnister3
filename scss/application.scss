@@ -129,7 +129,7 @@ video {
 
 .fullscreen-video-wrap video {
   min-width: 100%;
-  min-height: 100%;
+  height: 100%;
 }
 
 .header-overlay {
@@ -147,8 +147,48 @@ video {
 
 .jumbotron{
   position: relative;
-  height: 37.8vw;
-  z-index:-101;
+  background-image: url(../img/main.jpg);
+  background-size: contain;
+  width:100%;
+  //height: 100vh;
+  @media #{$brk-xlarge} {
+    display: flex;
+    align-items: center;
+    padding-top: -150px;
+    height: 100vh;
+    background-size: cover;
+  }
+
+  @media #{$brk-large} {
+    display: flex;
+    align-items: center;
+    padding-top: -150px;
+    height: 100vh;
+    background-size: cover;
+  }
+
+  @media #{$brk-medium} {
+    display: flex;
+    align-items: center;
+    padding-top: -150px;
+    height: 100vh;
+    background-size: cover;
+  }
+
+  @media #{$brk-narrow} {
+    height: auto;
+    padding-top: 100px!important;
+
+  }
+
+  @media #{$brk-spnarrow} {
+    padding-top: 10px!important;
+  }
+
+  @media #{$brk-iphone} {
+  padding-top: 10px!important;
+}
+
 }
 
 .videoWrapper {
@@ -254,19 +294,19 @@ body {
 
 a {
   color: inherit !important;
-  border-bottom: dashed 1px !important;
 }
+
 a:link {
   text-decoration: none !important;
 }
+
 a:hover {
   color: #FAA61A !important;
-  border-bottom: #FAA61A solid 1px !important;
 }
+
 a.dotted {
   /*for links*/
   color: #4b444d !important;
-  border-bottom: 2px dotted #cccccc !important;
 }
 
 h1 {
@@ -279,11 +319,18 @@ h1 {
 
   //@media #{$brk-narrow} {
   //  font-size: 2.5rem !important;
+  //  line-height: 3.0rem !important;
   //}
-  //
-  //@media #{$brk-spnarrow} {
-  //  font-size: 2.5rem !important;
-  //}
+
+  @media #{$brk-spnarrow} {
+    font-size: 2.3rem !important;
+    line-height: 3.0rem !important;
+  }
+
+  @media #{$brk-iphone} {
+    font-size: 1.7rem !important;
+    line-height: 2.4rem !important;
+  }
 
 }
 
@@ -301,6 +348,21 @@ h3 {
   line-height: 2.5rem !important;
   width: 80% !important;
   margin-left: 0 !important;
+
+  //@media #{$brk-narrow} {
+  //  font-size: 1.3rem !important;
+  //  line-height: 2.0rem !important;
+  //}
+
+  @media #{$brk-spnarrow} {
+    font-size: 1.3rem !important;
+    line-height: 2.0rem !important;
+  }
+
+  @media #{$brk-iphone} {
+    font-size: 1.2rem !important;
+    line-height: 1.8rem !important;
+  }
 }
 
 h3 span {
@@ -337,4 +399,8 @@ p, li {
   text-align: right;
   font-style: italic;
   margin-bottom: 40px;
+}
+
+.if-link {
+  border-bottom: dashed 1px;
 }

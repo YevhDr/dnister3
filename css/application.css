@@ -380,7 +380,7 @@ video {
 
 .fullscreen-video-wrap video {
   min-width: 100%;
-  min-height: 100%; }
+  height: 100%; }
 
 .header-overlay {
   height: 100vh;
@@ -394,8 +394,40 @@ video {
 
 .jumbotron {
   position: relative;
-  height: 37.8vw;
-  z-index: -101; }
+  background-image: url(../img/main.jpg);
+  background-size: contain;
+  width: 100%; }
+  @media (max-width: 2570px) {
+    .jumbotron {
+      display: flex;
+      align-items: center;
+      padding-top: -150px;
+      height: 100vh;
+      background-size: cover; } }
+  @media (max-width: 1440px) {
+    .jumbotron {
+      display: flex;
+      align-items: center;
+      padding-top: -150px;
+      height: 100vh;
+      background-size: cover; } }
+  @media (max-width: 1285px) {
+    .jumbotron {
+      display: flex;
+      align-items: center;
+      padding-top: -150px;
+      height: 100vh;
+      background-size: cover; } }
+  @media (max-width: 1024px) {
+    .jumbotron {
+      height: auto;
+      padding-top: 100px !important; } }
+  @media (max-width: 767px) {
+    .jumbotron {
+      padding-top: 10px !important; } }
+  @media (max-width: 374px) {
+    .jumbotron {
+      padding-top: 10px !important; } }
 
 .videoWrapper {
   position: relative;
@@ -477,20 +509,17 @@ body {
   background-color: rgba(0, 0, 0, 0.6); }
 
 a {
-  color: inherit !important;
-  border-bottom: dashed 1px !important; }
+  color: inherit !important; }
 
 a:link {
   text-decoration: none !important; }
 
 a:hover {
-  color: #FAA61A !important;
-  border-bottom: #FAA61A solid 1px !important; }
+  color: #FAA61A !important; }
 
 a.dotted {
   /*for links*/
-  color: #4b444d !important;
-  border-bottom: 2px dotted #cccccc !important; }
+  color: #4b444d !important; }
 
 h1 {
   color: black !important;
@@ -499,6 +528,14 @@ h1 {
   font-weight: bold !important;
   width: 80% !important;
   margin-left: 0 !important; }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 2.3rem !important;
+      line-height: 3.0rem !important; } }
+  @media (max-width: 374px) {
+    h1 {
+      font-size: 1.7rem !important;
+      line-height: 2.4rem !important; } }
 
 h2 {
   font-size: 2em !important;
@@ -511,6 +548,14 @@ h3 {
   line-height: 2.5rem !important;
   width: 80% !important;
   margin-left: 0 !important; }
+  @media (max-width: 767px) {
+    h3 {
+      font-size: 1.3rem !important;
+      line-height: 2.0rem !important; } }
+  @media (max-width: 374px) {
+    h3 {
+      font-size: 1.2rem !important;
+      line-height: 1.8rem !important; } }
 
 h3 span {
   background-color: rgba(255, 255, 255, 0.3); }
@@ -540,5 +585,8 @@ p, li {
   text-align: right;
   font-style: italic;
   margin-bottom: 40px; }
+
+.if-link {
+  border-bottom: dashed 1px; }
 
 /*# sourceMappingURL=application.css.map */
