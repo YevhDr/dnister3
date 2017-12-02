@@ -8,7 +8,7 @@
     min-height: 170px;
     background: #3A3F4A none repeat scroll 0 0;
     text-align: left;
-    font-size: 9px;
+    font-size: 7px;
     padding: 0;
     display: block;
     margin-top: 50px;
@@ -49,7 +49,7 @@
 .copying-info {
     padding-top: 10px;
     padding-bottom: 20px;
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 15px;
     color: #ffffff;
 
@@ -66,6 +66,6 @@
 }
 .support-site:link,
 .support-site:visited {
-    color:$orange;
+    color:$orange!important;
     font-size:1.2em;
 }

@@ -71,7 +71,7 @@ p, li {
   min-height: 170px;
   background: #3A3F4A none repeat scroll 0 0;
   text-align: left;
-  font-size: 9px;
+  font-size: 7px;
   padding: 0;
   display: block;
   margin-top: 50px; }
@@ -101,7 +101,7 @@ p, li {
 .copying-info {
   padding-top: 10px;
   padding-bottom: 20px;
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 15px;
   color: #ffffff; }
   @media (max-width: 1024px) {
@@ -117,7 +117,7 @@ p, li {
 
 .support-site:link,
 .support-site:visited {
-  color: #FAA61A;
+  color: #FAA61A !important;
   font-size: 1.2em; }
 
 .weirdo-container {
@@ -458,6 +458,12 @@ video {
   margin-left: -100px;
   margin-right: -300px; }
 
+video {
+  background-image: url(../img/loading_icon.gif);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center; }
+
 /* --------------------------------------
 -------------------Photo ---------------*/
 .photo {
@@ -466,6 +472,33 @@ video {
 
 .fishes {
   margin-bottom: 300px; }
+
+@media (max-width: 2570px) {
+  #static-map {
+    width: auto !important;
+    height: 100vh !important;
+    margin-left: auto;
+    margin-right: auto; } }
+@media (max-width: 1440px) {
+  #static-map {
+    width: auto !important;
+    height: 100vh !important;
+    margin-left: auto;
+    margin-right: auto; } }
+@media (max-width: 1285px) {
+  #static-map {
+    width: auto !important;
+    height: 100vh !important;
+    margin-left: auto;
+    margin-right: auto; } }
+@media (max-width: 767px) {
+  #static-map {
+    width: 100% !important;
+    height: auto !important; } }
+@media (max-width: 374px) {
+  #static-map {
+    width: 100% !important;
+    height: auto; } }
 
 /* --------------------------------------
 -------------------Text ---------------*/
@@ -534,6 +567,22 @@ h1 {
       line-height: 3.0rem !important; } }
   @media (max-width: 374px) {
     h1 {
+      font-size: 1.7rem !important;
+      line-height: 2.4rem !important; } }
+
+.jumbotron h1 {
+  color: black !important;
+  font-size: 3.0rem !important;
+  line-height: 4rem !important;
+  font-weight: bold !important;
+  width: 80% !important;
+  margin-left: 0 !important; }
+  @media (max-width: 767px) {
+    .jumbotron h1 {
+      font-size: 2.3rem !important;
+      line-height: 3.0rem !important; } }
+  @media (max-width: 374px) {
+    .jumbotron h1 {
       font-size: 1.7rem !important;
       line-height: 2.4rem !important; } }
 
