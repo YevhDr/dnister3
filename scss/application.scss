@@ -84,10 +84,30 @@ video {
 ------------- video ---------------*/
 
 .v-header {
-  height:100vh;
+  height:80vh;
   display:flex;
-  align-items: center;
   color: #fff;
+
+  @media #{$brk-xlarge} {
+    align-items: center;
+  }
+
+  @media #{$brk-large} {
+    align-items: center;
+  }
+
+  @media #{$brk-medium} {
+    align-items: center;
+  }
+
+  @media #{$brk-narrow} {
+    align-items: flex-start;
+
+  }
+
+  @media #{$brk-spnarrow} {
+    align-items: flex-start;
+  }
 }
 
 .contain {
@@ -122,6 +142,7 @@ video {
 
 .header-content{
   z-index: 2;
+
 }
 
 .jumbotron{
@@ -255,6 +276,14 @@ h1 {
   font-weight: bold !important;
   width: 80% !important;
   margin-left: 0 !important;
+
+  //@media #{$brk-narrow} {
+  //  font-size: 2.5rem !important;
+  //}
+  //
+  //@media #{$brk-spnarrow} {
+  //  font-size: 2.5rem !important;
+  //}
 
 }
 
