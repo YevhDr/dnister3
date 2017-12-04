@@ -296,8 +296,8 @@ p, li {
   box-sizing: border-box; }
 
 body {
+  margin: 0 !important;
   overflow-x: hidden;
-  margin-bottom: 100vh;
   font-size: 100% !important;
   font-family: Open Sans, sans-serif !important; }
   @media (max-width: 374px) {
@@ -368,6 +368,7 @@ video {
       line-height: 3.0rem !important; } }
   @media (max-width: 374px) {
     .jumbotron h1 {
+      margin-top: 40px !important;
       font-size: 1.7rem !important;
       line-height: 2.4rem !important; } }
 
@@ -445,7 +446,6 @@ video {
 /* --------------------------------------
 -------------------Text ---------------*/
 h1, caption, .header {
-  margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
@@ -580,9 +580,6 @@ p, li {
 .glyphicon .glyphicon-chevron-left:before {
   content: "тЧА";
   color: grey; }
-
-.carousel-inner {
-  margin-bottom: 40px; }
 
 .carousel-indicators li {
   display: inline-block;
