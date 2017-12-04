@@ -6,13 +6,8 @@ var ts = new TwoStep({
     stick: document.querySelector('.parent .sticky-outer'),
     narrative: [
         function(event) {
-            $('.parent .chart').html('<video src="video/video4.mp4" autoplay="autoplay" loop="loop" controls="controls" poster="img/loading_icon.gif"></video>');
+            $('.parent .chart').html('<video src="video/video4.mp4" autoplay="autoplay" loop="no-loop" controls="controls" poster="img/loading_icon.gif"></video>');
         }
-        // ,
-        // function(event) {
-        //     $('.parent .chart').text('').attr("background-color", "white");
-        // }
-
     ],
     offset: {
         up: '100%',
@@ -23,4 +18,3 @@ var ts = new TwoStep({
 
 
 
-//

@@ -44,6 +44,7 @@ p, li {
 /* ======== HEADER ======== */
 .logo {
   position: fixed;
+  width: 10%;
   float: left;
   margin: 15px 0px 0px 25px;
   z-index: 1000; }
@@ -298,6 +299,9 @@ body {
   margin-bottom: 100vh;
   font-size: 100% !important;
   font-family: Open Sans, sans-serif !important; }
+  @media (max-width: 374px) {
+    body {
+      margin-right: 5% !important; } }
 
 /*-------------------------------------------------
 ----------------scrollytelling--------------------*/
@@ -400,33 +404,39 @@ video {
   @media (max-width: 2570px) {
     .jumbotron {
       display: flex;
-      align-items: center;
+      text-align: center;
+      align-items: flex-start;
       padding-top: -150px;
       height: 100vh;
       background-size: cover; } }
   @media (max-width: 1440px) {
     .jumbotron {
       display: flex;
-      align-items: center;
+      text-align: center;
+      align-items: flex-start;
       padding-top: -150px;
       height: 100vh;
       background-size: cover; } }
   @media (max-width: 1285px) {
     .jumbotron {
       display: flex;
-      align-items: center;
+      text-align: center;
+      align-items: flex-start;
       padding-top: -150px;
       height: 100vh;
       background-size: cover; } }
   @media (max-width: 1024px) {
     .jumbotron {
       height: auto;
+      text-align: center;
       padding-top: 100px !important; } }
   @media (max-width: 767px) {
     .jumbotron {
+      text-align: left;
       padding-top: 10px !important; } }
   @media (max-width: 374px) {
     .jumbotron {
+      text-align: left;
       padding-top: 10px !important; } }
 
 .videoWrapper {
@@ -468,37 +478,35 @@ video {
 -------------------Photo ---------------*/
 .photo {
   width: 100% !important;
-  margin-top: 40px; }
-
-.fishes {
-  margin-bottom: 300px; }
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 @media (max-width: 2570px) {
-  #static-map {
+  .static-map {
     width: auto !important;
     height: 100vh !important;
     margin-left: auto;
     margin-right: auto; } }
 @media (max-width: 1440px) {
-  #static-map {
+  .static-map {
     width: auto !important;
     height: 100vh !important;
     margin-left: auto;
     margin-right: auto; } }
 @media (max-width: 1285px) {
-  #static-map {
+  .static-map {
     width: auto !important;
     height: 100vh !important;
     margin-left: auto;
     margin-right: auto; } }
 @media (max-width: 767px) {
-  #static-map {
+  .static-map {
     width: 100% !important;
     height: auto !important; } }
 @media (max-width: 374px) {
-  #static-map {
+  .static-map {
     width: 100% !important;
-    height: auto; } }
+    height: auto !important; } }
 
 /* --------------------------------------
 -------------------Text ---------------*/
@@ -556,7 +564,7 @@ a.dotted {
 
 h1 {
   color: black !important;
-  font-size: 3.0rem !important;
+  font-size: 3.5rem !important;
   line-height: 4rem !important;
   font-weight: bold !important;
   width: 80% !important;
@@ -572,7 +580,7 @@ h1 {
 
 .jumbotron h1 {
   color: black !important;
-  font-size: 3.0rem !important;
+  font-size: 4rem !important;
   line-height: 4rem !important;
   font-weight: bold !important;
   width: 80% !important;
@@ -624,6 +632,9 @@ h5 {
   line-height: 1.5em !important;
   margin-left: 0 !important;
   width: 80% !important; }
+
+h5 span {
+  background-color: rgba(255, 255, 255, 0.3) !important; }
 
 p, li {
   font-size: 1.6em !important;

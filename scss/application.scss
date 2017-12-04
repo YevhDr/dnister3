@@ -14,6 +14,9 @@ body {
   margin-bottom: 100vh;
   font-size: 100% !important;
   font-family: Open Sans, sans-serif !important;
+  @media #{$brk-iphone} {
+    margin-right: 5% !important;
+  }
 }
 
 /*-------------------------------------------------
@@ -143,13 +146,15 @@ video {
 
 .jumbotron {
   position: relative;
+
   background-image: url(../img/main.jpg);
   background-size: contain;
   width: 100%;
   //height: 100vh;
   @media #{$brk-xlarge} {
     display: flex;
-    align-items: center;
+    text-align: center;
+    align-items: flex-start;
     padding-top: -150px;
     height: 100vh;
     background-size: cover;
@@ -157,7 +162,8 @@ video {
 
   @media #{$brk-large} {
     display: flex;
-    align-items: center;
+    text-align: center;
+    align-items: flex-start;
     padding-top: -150px;
     height: 100vh;
     background-size: cover;
@@ -165,7 +171,8 @@ video {
 
   @media #{$brk-medium} {
     display: flex;
-    align-items: center;
+    text-align: center;
+    align-items: flex-start;
     padding-top: -150px;
     height: 100vh;
     background-size: cover;
@@ -173,15 +180,18 @@ video {
 
   @media #{$brk-narrow} {
     height: auto;
+    text-align: center;
     padding-top: 100px !important;
 
   }
 
   @media #{$brk-spnarrow} {
+    text-align: left;
     padding-top: 10px !important;
   }
 
   @media #{$brk-iphone} {
+    text-align: left;
     padding-top: 10px !important;
   }
 
@@ -232,15 +242,12 @@ video {
 
   .photo {
     width: 100% !important;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
   }
 
-  .fishes {
-    margin-bottom: 300px;
-  }
-
-  #static-map {
+.static-map {
     @media #{$brk-xlarge} {
       width: auto!important;
       height: 100vh!important;
@@ -351,7 +358,7 @@ video {
 
   h1 {
     color: black !important;
-    font-size: 3.0rem !important;
+    font-size: 3.5rem !important;
     line-height: 4rem !important;
     font-weight: bold !important;
     width: 80% !important;
@@ -376,7 +383,7 @@ video {
 
   .jumbotron h1 {
     color: black !important;
-    font-size: 3.0rem !important;
+    font-size: 4rem !important;
     line-height: 4rem !important;
     font-weight: bold !important;
     width: 80% !important;
@@ -452,6 +459,10 @@ video {
     margin-left: 0 !important;
     width: 80% !important;
   }
+
+h5 span {
+  background-color: rgba(255, 255, 255, 0.3)!important;
+}
 
   p, li {
     font-size: 1.6em !important;
