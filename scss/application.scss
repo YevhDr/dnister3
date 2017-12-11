@@ -167,6 +167,11 @@ video {
   }
 
 .static-map {
+
+  //@media (min-width: 768px) and (max-width: 1024px) {
+  //  width: 100%!important;
+  //  height: auto!important;
+  //}
     @media #{$brk-xlarge} {
       width: auto!important;
       height: 100vh!important;
@@ -182,8 +187,8 @@ video {
     }
 
     @media #{$brk-medium} {
-      width: auto!important;
-      height: 100vh!important;
+      width: 100%!important;
+      height: auto!important;
       margin-left: auto;
       margin-right: auto;
     }

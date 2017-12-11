@@ -430,8 +430,8 @@ video {
     margin-right: auto; } }
 @media (max-width: 1285px) {
   .static-map {
-    width: auto !important;
-    height: 100vh !important;
+    width: 100% !important;
+    height: auto !important;
     margin-left: auto;
     margin-right: auto; } }
 @media (max-width: 767px) {
